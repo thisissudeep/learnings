@@ -1,0 +1,22 @@
+Document Similarity:
+
+in a bunch of documents ,we need to figure out what company the document belongs to.
+
+in 1st, we anotate by it by using ratio 3;1,whenever this ratio occurs then the higher ratio's company is the document belongs to.
+but using ratios not applicable in all datasets ,where the vector plays a role
+
+in these graphs,  the angle betweeen the documents shows its similarity.ie)if the angle between the two documents are 0 (or) less angle difference ,
+then the two are same documents(belongs to same company (or)speaks about same company)
+
+document similarity is betterly identified using Range than in degree
+
+COsine similarity is the cosine angle between the two vectors of documents
+
+COsine similarity:
+1 - similar documents
+0 - different
+-1 - opposite concept documents(different)
+
+COsine distance:
+0 - same documents
+1 - different
