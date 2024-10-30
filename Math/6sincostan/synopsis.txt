@@ -1,0 +1,13 @@
+forester eg:
+A forester needs to climb on the tree,for that he need to know the height of the tree.        [height-x]
+so, he is using an instrument to measure angle from his (ground)view to the top of the tree   [angle]
+and also he measured distance of the tree from his position using a tape.                     [50ft-d]
+
+
+just tan is a mathematical concept where it has a relationship between 2 sides and angle ,those are obtained from nature after many scientific and mathematical research.
+
+another pulling example:
+we need to move a heavy weighted package in our home to another room.
+here a force(10N) nakes a 30` angle and given us a makes x and y  axis.
+x axis force (x/horizontal component) is used to move the package in horizontal direction whereas y axis force(y/vertical component) is used to lift the package slighter.
+we need to lift it to reduce friction and so we can move easier 

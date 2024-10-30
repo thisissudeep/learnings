@@ -1,0 +1,20 @@
+Notes:
+Binary tree - 0/1/2 (max 2 ) child nodes only ,maybe it can without any child node too
+
+
+BST have small nodes in left and large nodes data in right
+Right skewed tree, left skewed tree (related to BST)
+
+Pre,in,post traversal - recursion - DFS 
+Level - Queue/AL  - BFS
+
+
+
+
+//Queue:
+add,remove,element - exception
+offer,poll,peek -null/false
+
+//Hi
+
+

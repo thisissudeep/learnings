@@ -1,0 +1,38 @@
+Data Cleaning
+       Data Exploration & Visualization
+       Feature selection
+       Feature Engineering:
+           Handle na values
+           Handle Categorical features
+           Handle text features
+           Remove outliers
+       document features to token count -CountVectorizer
+
+Split dataset  -train_test_split
+
+Choose best model -
+RandomizedSearchCV, GridSearchCV,
+classification_report,
+confusion_matrix
+
+Train model -fit()
+
+Do Prediction
+
+
+
+
+Document features-> 
+split data
+pipeline (preprocessing,model training)
+
+
+
+Feature engineering 
+outlier detection
+dimensionality reduction / removal
+
+
+
+MultinomialNB- text classification tasks
+
