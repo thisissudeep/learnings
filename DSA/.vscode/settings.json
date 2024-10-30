@@ -1,8 +1,0 @@
-{
-    "files.autoSave": "afterDelay",
-    "files.exclude": {
-        "**/*.class": true
-    },
-    "java.format.settings.url": "eclipse-formatter.xml",
-    "java.debug.settings.onBuildFailureProceed": true
-}
