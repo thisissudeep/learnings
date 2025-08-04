@@ -47,31 +47,28 @@ public class BinaryTree {
     }
 
 
-    public void doPreOrderTraversal(Node root)
-    {
-    if(root==null) return;
-    System.out.print(root.data+" ");
+    // Depth First Search (DFS)
+    public void doPreOrderTraversal(Node root) {
+    if (root == null) return;
+    System.out.print(root.data + " ");
+    doPreOrderTraversal(root.left);
+    doPreOrderTraversal(root.right);
+    }
+
+    public void doInOrderTraversal(Node root) {
+    if (root == null) return;
     doInOrderTraversal(root.left);
+    System.out.print(root.data + " ");
     doInOrderTraversal(root.right);
     }
 
-
-    public void doInOrderTraversal(Node root)
-    {
-    if(root==null) return;
-    doInOrderTraversal(root.left);
-    System.out.print(root.data+" ");
-    doInOrderTraversal(root.right);
+    public void doPostOrderTraversal(Node root) {
+    if (root == null) return;
+    doPostOrderTraversal(root.left);
+    doPostOrderTraversal(root.right);
+    System.out.print(root.data + " ");
     }
 
-
-    public void doPostOrderTraversal(Node root)
-    {
-    if(root==null) return;
-    doInOrderTraversal(root.left);
-    doInOrderTraversal(root.right);
-    System.out.print(root.data+" ");
-    }
 
     
     public void levelOrder()  //Breadth First Search (BFS)
@@ -310,9 +307,14 @@ class Main {
         // root.left=null;
         // root.right=new Node(2);
         // root.right.left=new Node(3);
-
-        // bt.levelOrder();
-         bt.zigZagLevelOrder();
+        
+        System.out.println();
+        bt.doPreOrderTraversal(root);
+        System.out.println();
+        bt.doInOrderTraversal(root);
+        System.out.println();
+        //bt.levelOrder();
+        //bt.zigZagLevelOrder();
         // System.out.println(bt.height());
         // System.out.println(bt.level());
         // System.out.println(bt.deepestLeavesSum(root));

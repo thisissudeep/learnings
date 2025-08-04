@@ -159,3 +159,60 @@ class Main_Sorting
         // for(int num:ans) System.out.print(num+" ");
     }
 }
+
+
+
+
+/*
+
+
+🔢 Comparison-Based Sorting Algorithms
+
+
+| Sorting Algorithm  | Best Case  | Average Case | Worst Case | Space Complexity | Stable? | Notes                                                                    |
+| ------------------ | ---------- | ------------ | ---------- | ---------------- | ------- | ------------------------------------------------------------------------ |
+| **Merge Sort**     | O(n log n) | O(n log n)   | O(n log n) | O(n)             | ✅ Yes   | Great stability, always O(n log n), used in `LinkedList.sort()`          |
+| **Quick Sort**     | O(n log n) | O(n log n)   | O(n²)      | O(log n) avg     | ❌ No    | Fastest in practice, in-place; bad for sorted input without pivot tuning |
+| **Heap Sort**      | O(n log n) | O(n log n)   | O(n log n) | O(1)             | ❌ No    | Space-efficient but cache-unfriendly                                     |
+| **Bubble Sort**    | O(n)       | O(n²)        | O(n²)      | O(1)             | ✅ Yes   | Only educational, avoid in practice                                      |
+| **Insertion Sort** | O(n)       | O(n²)        | O(n²)      | O(1)             | ✅ Yes   | Good for small or nearly sorted arrays                                   |
+| **Selection Sort** | O(n²)      | O(n²)        | O(n²)      | O(1)             | ❌ No    | Never preferred — always O(n²)                                           |
+
+
+
+ ⚔️ Quick Sort vs. Heap Sort — The Truth
+
+| Feature                | **Quick Sort**                     | **Heap Sort**                    |
+| ---------------------- | ---------------------------------  | -------------------------------- |
+| **Time Complexity**    | Avg: O(n log n), Worst: O(n²)      | O(n log n) always                |
+| **Space Complexity**   | O(log n) (recursive stack)         | O(1) (in-place)                  |
+| **Stability**          | ❌ Not stable                      | ❌ Not stable                     |
+| **Cache Friendliness** | ✅ High (due to sequential access) | ❌ Poor (due to tree-like access) |
+| **In-place?**          | ✅ Yes                             | ✅ Yes                            |
+| **Practical Speed**    | ✅ Very fast in average cases      | ❌ Slower due to memory access    |
+
+
+
+🔍 Why Heap Sort Is Ranked Below Quick Sort
+1. Cache Locality
+
+    Quick Sort accesses memory linearly and sequentially → fits CPU cache better.
+
+    Heap Sort does tree-style access → jumps all over memory → cache misses = slower.
+
+
+2. Real-World Benchmarks
+
+Despite O(n²) worst case, Quick Sort outperforms Heap Sort on:
+
+    Large arrays
+
+    Primitive types
+
+    Systems with memory hierarchy (i.e., basically all modern CPUs)
+
+
+
+
+
+ */
